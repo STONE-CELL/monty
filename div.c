@@ -32,7 +32,7 @@ void f_div(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	a = i->next->n / i->n;
+	x = i->next->n / i->n;
 	i->next->n = x;
 	*head = i->next;
 	free(i);
